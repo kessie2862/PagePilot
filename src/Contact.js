@@ -1,7 +1,14 @@
 import React from 'react';
+import Root from './routes/root';
+import './index.css';
 
 function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <div className="default-container">
+      <Root />
+      <h1>This is the Contact page</h1>
+    </div>
+  );
 }
 
 export default Contact;
