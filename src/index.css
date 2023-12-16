@@ -69,3 +69,7 @@ i {
   justify-content: center;
   width: 100%;
 }
+
+.default-container {
+  padding-top: 5rem;
+}
