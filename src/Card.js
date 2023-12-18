@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
+import './styles/card.scss';
 
 const Card = ({ book }) => {
   const [show, setShow] = useState(false);
@@ -8,7 +9,7 @@ const Card = ({ book }) => {
   console.log(book);
 
   return (
-    <div>
+    <div className="new">
       {book.map((item) => {
         const { title } = item.volumeInfo;
         const { authors } = item.volumeInfo;
@@ -36,21 +37,23 @@ const Card = ({ book }) => {
               role="button"
               tabIndex={0}
             >
-              <img src={thumbnail} alt="" />
-              <div>
-                <h3 className="title">{title}</h3>
-                <p>
-                  Authors:
-                  {authors}
-                </p>
-                <p>
-                  Publisher:
-                  {publisher}
-                </p>
-                <p>
-                  Page Count:
-                  {pageCount}
-                </p>
+              <div className="card-container">
+                <img src={thumbnail} alt="" />
+                <div>
+                  <h3 className="title">{title}</h3>
+                  <p>
+                    Authors:
+                    {authors}
+                  </p>
+                  <p>
+                    Publisher:
+                    {publisher}
+                  </p>
+                  <p>
+                    Page Count:
+                    {pageCount}
+                  </p>
+                </div>
               </div>
             </div>
           );
