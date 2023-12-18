@@ -3,6 +3,7 @@ import axios from 'axios';
 import Root from './routes/root';
 import Card from './Card';
 import './index.css';
+import './styles/searchBook.scss';
 
 function SearchBook() {
   const [search, setSearch] = useState('');
@@ -35,7 +36,7 @@ function SearchBook() {
           />
         </div>
       </div>
-      <div className="container">
+      <div className="col-12 pt-5 container">
         {bookData.length > 0 && <Card book={bookData} />}
       </div>
     </div>
