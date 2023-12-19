@@ -35,12 +35,6 @@ export default function Root() {
         >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              {/* <span className="sr-only">Home</span> */}
-              {/* <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              /> */}
               <p className="text-indigo-700 text-lg">PagePilot</p>
             </Link>
           </div>
