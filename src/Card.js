@@ -40,7 +40,7 @@ const Card = ({ book }) => {
               <div className="card-container">
                 <img src={thumbnail} alt="" />
                 <div>
-                  <h3 className="title">{title}</h3>
+                  <h2 className="italic font-medium">{title}</h2>
                   <p>
                     Authors:
                     {authors}
