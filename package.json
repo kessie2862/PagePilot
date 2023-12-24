@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@reduxjs/toolkit": "^2.0.1",
@@ -19,6 +21,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
     "sort-by": "^1.2.0",
+    "tw-elements-react": "^1.0.0-alpha2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
