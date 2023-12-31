@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="default-container">
       <Root />
-      <h1>This is the Conact page</h1>
+      <h1>This is the Contact page</h1>
     </div>
   );
 }
