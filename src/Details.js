@@ -10,7 +10,7 @@ const features = [
   {
     name: 'Critical Thinking Skills.',
     description:
-      'Additionally, it encorages critical thinking by presenting diverse perspectives and challenging ideas.',
+      'Additionally, it encourages critical thinking by presenting diverse perspectives and challenging ideas.',
     icon: ArrowRightIcon,
   },
   {
