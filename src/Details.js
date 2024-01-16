@@ -4,7 +4,7 @@ const features = [
   {
     name: 'Knowledge Acquisition.',
     description:
-      "It allows individuals to acquire information on a wide range of subjects. Whether it's textbooks, articles, or novels, reading exposes people to new ideas, concepts, and facts.",
+      "It allows individuals to acquire inormation on a wide range of subjects. Whether it's textbooks, articles, or novels, reading exposes people to new ideas, concepts, and facts.",
     icon: ArrowRightIcon,
   },
   {
