@@ -15,9 +15,8 @@ const Card = ({ book }) => {
         const { authors } = item.volumeInfo;
         const { pageCount } = item.volumeInfo;
         const { publisher } = item.volumeInfo;
-        const thumbnail =
-          item.volumeInfo.imageLinks &&
-          item.volumeInfo.imageLinks.smallThumbnail;
+        const thumbnail = item.volumeInfo.imageLinks
+          && item.volumeInfo.imageLinks.smallThumbnail;
         console.log(thumbnail);
 
         if (thumbnail !== undefined && title !== undefined) {
@@ -82,7 +81,7 @@ Card.propTypes = {
           amount: PropTypes.number,
         }),
       }),
-    })
+    }),
   ).isRequired,
 };
 
