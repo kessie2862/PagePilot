@@ -8,7 +8,6 @@ import ErrorPage from './error-page';
 import HomePage from './HomePage';
 import About from './About';
 import SearchBook from './SearchBook';
-import Contact from './Contact';
 
 const router = createBrowserRouter([
   {
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
-      },
-      {
-        path: '/contact',
-        element: <Contact />,
       },
       {
         path: '/search-book',
