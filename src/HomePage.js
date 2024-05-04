@@ -1,6 +1,7 @@
 import Root from './routes/root';
 import HomeBg from './HomeBg';
 import Details from './Details';
+import Footer from './Footer';
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <Root />
       <HomeBg />
       <Details />
+      <Footer />
     </div>
   );
 }
