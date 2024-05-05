@@ -17,10 +17,6 @@ const navigation = [
     name: 'About',
     route: '/about',
   },
-  {
-    name: 'Contact',
-    route: '/contact',
-  },
 ];
 
 export default function Root() {
@@ -89,7 +85,7 @@ export default function Root() {
                     <Link
                       key={item.name}
                       to={item.route}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 "
                     >
                       {item.name}
                     </Link>
