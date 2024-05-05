@@ -3,12 +3,10 @@ import axios from 'axios';
 import Root from './routes/root';
 import Card from './Card';
 import './index.css';
-import './styles/searchBook.scss';
 
 function SearchBook() {
   const [search, setSearch] = useState('');
   const [bookData, setData] = useState([]);
-  console.log(bookData);
 
   const searchBook = (e) => {
     if (e.key === 'Enter') {
@@ -22,18 +20,28 @@ function SearchBook() {
   };
 
   return (
-    <div className="default-container">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Root />
-      <div className="row2">
-        <h2>Find Your Book</h2>
-        <div className="search">
-          <input
-            type="text"
-            placeholder="Enter Your Book Name"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            onKeyDown={searchBook}
-          />
+      <div className="mt-8">
+        <div className="mt-4 text-center">
+          <h2 className="text-xl font-bold mb-4 text-gray-600">
+            If you know the name of the author or publisher, you can simply type it in, search,
+            {' '}
+            <br />
+            {' '}
+            and find the book without needing to know its title.
+          </h2>
+        </div>
+        <div className="max-w-md mx-auto">
+          <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+          <div className="relative">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" onKeyDown={searchBook} onChange={(e) => setSearch(e.target.value)} value={search} placeholder="Enter your book name, title, author or publisher." className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+          </div>
         </div>
       </div>
       <div className="col-12 pt-5 container">
