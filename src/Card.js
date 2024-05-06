@@ -6,7 +6,6 @@ import './styles/card.scss';
 const Card = ({ book }) => {
   const [show, setShow] = useState(false);
   const [bookItem, setItem] = useState();
-  console.log(book);
 
   return (
     <div className="new">
@@ -17,7 +16,6 @@ const Card = ({ book }) => {
         const { publisher } = item.volumeInfo;
         const thumbnail = item.volumeInfo.imageLinks
           && item.volumeInfo.imageLinks.smallThumbnail;
-        console.log(thumbnail);
 
         if (thumbnail !== undefined && title !== undefined) {
           return (
