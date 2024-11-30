@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+'use client';
+
+import Image from 'next/image';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
 import './styles/card.scss';
@@ -14,8 +17,9 @@ const Card = ({ book }) => {
         const { authors } = item.volumeInfo;
         const { pageCount } = item.volumeInfo;
         const { publisher } = item.volumeInfo;
-        const thumbnail = item.volumeInfo.imageLinks
-          && item.volumeInfo.imageLinks.smallThumbnail;
+        const thumbnail =
+          item.volumeInfo.imageLinks &&
+          item.volumeInfo.imageLinks.smallThumbnail;
 
         if (thumbnail !== undefined && title !== undefined) {
           return (
@@ -36,7 +40,7 @@ const Card = ({ book }) => {
               tabIndex={0}
             >
               <div className="card-container">
-                <img src={thumbnail} alt="" />
+                <Image src={thumbnail} width={100} height={100} alt="Testing" />
                 <div>
                   <h2 className="italic font-medium">{title}</h2>
                   <p>
@@ -79,7 +83,7 @@ Card.propTypes = {
           amount: PropTypes.number,
         }),
       }),
-    }),
+    })
   ).isRequired,
 };
 

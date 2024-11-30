@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 
 const features = [
@@ -45,21 +47,22 @@ function Details() {
                           aria-hidden="true"
                         />
                         {feature.name}
-                      </dt>
-                      {' '}
+                      </dt>{' '}
                       <dd className="inline">{feature.description}</dd>
                     </div>
                   ))}
                 </dl>
               </div>
             </div>
-            <img
-              src="https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-              width={2432}
-              height={1442}
-            />
+            <div className="flex justify-center">
+              <Image
+                src="/pex.webp"
+                alt="Product screenshot"
+                className="w-full max-w-[42rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[48rem] lg:w-[57rem]"
+                width={2432}
+                height={1442}
+              />
+            </div>
           </div>
         </div>
       </div>
